@@ -17,14 +17,14 @@
   }
 
   .nav-item {
-    @apply text-primary-900 font-bold hover:bg-primary-transparent animation rounded-xl p-2;
+    @apply text-primary-900 font-bold hover:bg-primary-400 animation rounded-xl p-2;
   }
 
   .nav-active {
-    @apply bg-gray-transparent rounded-xl p-2;
+    @apply bg-primary-400 rounded-xl p-2;
   }
 
   .mobile-nav-active {
-    @apply opacity-100 h-80 animation !important;
+    @apply opacity-100 h-64 animation !important;
   } 
 }
