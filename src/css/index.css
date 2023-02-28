@@ -13,11 +13,11 @@
   }
 
   .base-button {
-    @apply px-6 py-3 text-center w-full rounded-xl bg-primary-900 animation hover:scale-105 hover:bg-white hover:text-primary-900;
+    @apply px-6 py-3 text-center rounded-xl bg-primary-transparent border-2 border-primary-400 text-primary-bg hover:bg-primary-400 animation;
   }
 
   .nav-item {
-    @apply text-primary-900 font-bold hover:bg-primary-400 animation rounded-xl p-2;
+    @apply text-primary-900 font-bold hover:bg-primary-400 animation rounded-xl p-2 cursor-pointer;
   }
 
   .nav-active {
@@ -25,6 +25,10 @@
   }
 
   .mobile-nav-active {
-    @apply opacity-100 h-64 animation !important;
+    @apply opacity-100 h-48 animation !important;
   } 
+
+  .contact-items {
+    @apply flex flex-col items-center justify-center gap-4;
+  }
 }

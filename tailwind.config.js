@@ -14,6 +14,9 @@ module.exports = {
       "4xl": "2880px"
     },
     extend: {
+      backgroundImage: {
+        'home' : "url('/public/background.jpg')",
+      },
       container: {
         center: true,
         padding: {
@@ -23,7 +26,8 @@ module.exports = {
       colors: {
         primary: {
           transparent: "#42566c66",
-          bg: "#e2e8f0",
+          bg: "#e2e8f0", // general bg
+          default: "#9ca3af", //navbar bg
           400: "#73787c",
           900: "#393d40",
         }
@@ -34,6 +38,9 @@ module.exports = {
       boxShadow: {
         '3xl': 'inset 0 35px 60px -15px rgba(0, 0, 0, 1)',
       },
+      spacing: {
+        custom: "125px",
+      }
     },
   },
   plugins: [],

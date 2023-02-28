@@ -1,19 +1,23 @@
 import { useState } from "react";
-//import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-scroll";
 import Icons from "./Icons.js";
+//import { useLocation } from "react-router-dom";
 
 export default function Navbar() {
   //const location = useLocation().pathname;
   const [isNavbar, setIsNavbar] = useState(false);
 
   return (
-    <header className="relative bg-primary-transparent shadow-xl h-32 flex flex-col items-center justify-center">
-      <div className="container flex items-center justify-between md:gap-0 gap-40 text-lg">
-        <img
-          className="h-auto md:w-48 w-44 hover:scale-105 animation"
-          src={`${process.env.PUBLIC_URL}/logo.jpg`}
-          alt="Navbar Logo"
-        />
+    <header className="header-nav w-full h-32 flex flex-col items-center justify-center text-lg shadow-xl z-50" id="start">
+      <div className="px-12 mx-auto w-full h-32 fixed flex items-center justify-between bg-primary-default">
+        <Link to="start" 
+          smooth={true}
+          duration={500}>
+          <img 
+            className="h-auto md:w-48 w-44 hover:scale-105 animation cursor-pointer"
+            src="/logo.png" alt="Navbar Logo" 
+          />
+        </Link> 
 
         <Icons 
           iconName="menu"
@@ -23,47 +27,104 @@ export default function Navbar() {
 
         <nav>
           <ul className="md:flex hidden gap-x-10">
-            <li 
-              className="nav-item">Ana Sayfa
+            <li>
+              <Link 
+                className="nav-item"
+                activeClass="nav-active"
+                to="start"
+                spy={true}
+                smooth={true}
+                duration={500}>Ana Sayfa
+              </Link>
             </li>
 
-            <li 
-              className="nav-item">Hizmetlerimiz
+            <li>
+              <Link 
+                className="nav-item"
+                activeClass="nav-active"
+                to="services"
+                spy={true}
+                smooth={true}
+                duration={500}>Hizmetlerimiz
+              </Link>
             </li>
 
-            <li 
-              className="nav-item">Hakkımızda
+            <li>
+              <Link 
+                className="nav-item"
+                activeClass="nav-active"
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={500}>Hakkımızda
+              </Link>
             </li>
 
-            <li 
-              className="nav-item">İletişim
+            <li>
+              <Link 
+                className="nav-item"
+                activeClass="nav-active"
+                to="info"
+                spy={true}
+                smooth={true}
+                duration={500}>İletişim
+              </Link>
             </li>
           </ul>
         </nav>
       </div>
 
+
       {/* mobile navbar items */}
-      <div className={`${
+      <div 
+        className={`${
           isNavbar ? "mobile-nav-active" : "!opacity-0 !h-0 animation"
-        } w-full h-0 opacity-0 md:hidden absolute top-32 bg-primary-transparent shadow-xl z-50 text-base`}
+        } w-full h-0 opacity-0 md:hidden fixed top-custom bg-primary-default shadow-xl z-30 text-base`}
       >
-
         <nav className="container">
-          <ul className="h-64 flex flex-col items-center justify-center gap-6">
-            <li 
-              className="nav-item">Ana Sayfa
+          <ul className="flex flex-col items-center gap-6">
+            <li>
+              <Link 
+                className="nav-item"
+                activeClass="nav-active"
+                to="start"
+                spy={true}
+                smooth={true}
+                duration={500}>Ana Sayfa
+              </Link>
             </li>
 
-            <li 
-              className="nav-item">Hizmetlerimiz
+            <li>
+              <Link 
+                className="nav-item"
+                activeClass="nav-active"
+                to="services"
+                spy={true}
+                smooth={true}
+                duration={500}>Hizmetlerimiz
+              </Link>
             </li>
 
-            <li 
-              className="nav-item">Hakkımızda
+            <li>
+              <Link 
+                className="nav-item"
+                activeClass="nav-active"
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={500}>Hakkımızda
+              </Link>
             </li>
 
-            <li 
-              className="nav-item">İletişim
+            <li>
+              <Link 
+                className="nav-item"
+                activeClass="nav-active"
+                to="info"
+                spy={true}
+                smooth={true}
+                duration={500}>İletişim
+              </Link>
             </li>
           </ul>
         </nav>
