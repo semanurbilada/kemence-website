@@ -1,23 +1,22 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
 import Icons from "./Icons.js";
-//import { useLocation } from "react-router-dom";
 
 export default function Navbar() {
-  //const location = useLocation().pathname;
   const [isNavbar, setIsNavbar] = useState(false);
 
   return (
-    <header className="header-nav w-full h-32 flex flex-col items-center justify-center text-lg shadow-xl z-50" id="start">
-      <div className="px-12 mx-auto w-full h-32 fixed flex items-center justify-between bg-primary-default">
-        <Link to="start" 
+    <header className="w-full h-32 flex flex-col items-center justify-center text-lg shadow-xl z-50">
+      <div className="px-12 mx-auto w-full h-32 fixed flex items-center justify-between bg-primary-default z-50">
+        <Link to="home"
           smooth={true}
+          offset={-150}
           duration={500}>
           <img 
             className="h-auto md:w-48 w-44 hover:scale-105 animation cursor-pointer"
             src="/logo.png" alt="Navbar Logo" 
           />
-        </Link> 
+        </Link>
 
         <Icons 
           iconName="menu"
@@ -31,9 +30,10 @@ export default function Navbar() {
               <Link 
                 className="nav-item"
                 activeClass="nav-active"
-                to="start"
+                to="home"
                 spy={true}
                 smooth={true}
+                offset={-150}
                 duration={500}>Ana Sayfa
               </Link>
             </li>
@@ -45,6 +45,7 @@ export default function Navbar() {
                 to="services"
                 spy={true}
                 smooth={true}
+                offset={-100}
                 duration={500}>Hizmetlerimiz
               </Link>
             </li>
@@ -56,6 +57,7 @@ export default function Navbar() {
                 to="about"
                 spy={true}
                 smooth={true}
+                offset={-100}
                 duration={500}>Hakkımızda
               </Link>
             </li>
@@ -79,7 +81,7 @@ export default function Navbar() {
       <div 
         className={`${
           isNavbar ? "mobile-nav-active" : "!opacity-0 !h-0 animation"
-        } w-full h-0 opacity-0 md:hidden fixed top-custom bg-primary-default shadow-xl z-30 text-base`}
+        } w-full h-0 opacity-0 md:hidden fixed top-custom bg-primary-default shadow-xl z-50 text-base`}
       >
         <nav className="container">
           <ul className="flex flex-col items-center gap-6">
@@ -87,9 +89,10 @@ export default function Navbar() {
               <Link 
                 className="nav-item"
                 activeClass="nav-active"
-                to="start"
+                to="home"
                 spy={true}
                 smooth={true}
+                offset={-150}
                 duration={500}>Ana Sayfa
               </Link>
             </li>
@@ -101,6 +104,7 @@ export default function Navbar() {
                 to="services"
                 spy={true}
                 smooth={true}
+                offset={-100}
                 duration={500}>Hizmetlerimiz
               </Link>
             </li>
@@ -112,6 +116,7 @@ export default function Navbar() {
                 to="about"
                 spy={true}
                 smooth={true}
+                offset={-100}
                 duration={500}>Hakkımızda
               </Link>
             </li>

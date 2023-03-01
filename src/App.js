@@ -4,7 +4,7 @@ import "../src/css/index.css";
 import { 
   Route, 
   Routes, 
-  HashRouter as Router 
+  BrowserRouter as Router 
 } from "react-router-dom";
 
 import Home from "./views/Home";

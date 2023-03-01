@@ -1,27 +1,17 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Link } from "react-scroll";
 import Icons from "./Icons.js";
 
 export default function Footer() {
     AOS.init();
     return(
-        <section className="min-h-auto w-full bg-primary-default z-10" id="info">
-            <div className="container py-20 flex flex-col items-center md:gap-20 gap-10 text-xl">
-                <div>
-                    <Link 
-                        className="container md:flex hidden"
-                        to="start" 
-                        smooth={true}
-                        duration={500}>
-                        <img 
-                            className="h-auto md:w-56 w-48 hover:scale-105 animation cursor-pointer md:pointer-events-auto pointer-events-none"
-                            src="/logo.png" alt="Navbar Logo" 
-                        />
-                    </Link> 
-                </div>
+        <footer className="section-default relative bg-primary-default z-10" id="info">
+            <div className="container py-20 flex flex-col items-center md:gap-32 gap-10">
+                <h3 
+                    className="md:text-4xl text-2xl text-primary-900 underline md:underline-offset-8 md:decoration-4">İLETİŞİM
+                </h3>
 
-                <div className="container flex md:flex-row flex-col items-center justify-between md:gap-0 gap-14 md:text-lg text-base text-primary-900">
+                <div className="container flex md:flex-row flex-col items-center justify-between md:gap-0 gap-14 md:text-xl text-base text-primary-900">
                     <div 
                         className="contact-items" 
                         data-aos="zoom-in"
@@ -58,6 +48,9 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-        </section>
+            <ul className="absolute bottom-7 text-sm md:text-base text-primary-900 font-bold">
+                <li>Copyright © 2023 | Kemençe Hurdacılık</li>
+            </ul>
+        </footer>
     );
 }

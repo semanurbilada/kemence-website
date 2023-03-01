@@ -31,4 +31,8 @@
   .contact-items {
     @apply flex flex-col items-center justify-center gap-4;
   }
+
+  .section-default {
+    @apply h-screen flex items-center justify-center;
+  }
 }
