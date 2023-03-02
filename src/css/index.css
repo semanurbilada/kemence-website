@@ -17,11 +17,11 @@
   }
 
   .nav-item {
-    @apply text-primary-900 font-bold hover:bg-primary-400 animation rounded-xl p-2 cursor-pointer;
+    @apply text-primary-900 hover:bg-primary-400 hover:text-secondary-200 p-2 rounded-xl animation cursor-pointer;
   }
 
   .nav-active {
-    @apply bg-primary-400 rounded-xl p-2;
+    @apply bg-primary-400 text-secondary-200 p-2 rounded-xl;
   }
 
   .mobile-nav-active {

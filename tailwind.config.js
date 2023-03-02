@@ -27,9 +27,13 @@ module.exports = {
         primary: {
           transparent: "#42566c66",
           bg: "#e2e8f0", // general bg
-          default: "#9ca3af", //navbar bg
+          default: "#9ca3af", //navbar home bg
           400: "#73787c",
           900: "#393d40",
+        },
+        secondary: {
+          200: "#e2e8f0", // navbar info bg
+          400: "#94a3b8", // navbar middle bg
         }
       },
       fontFamily: {
