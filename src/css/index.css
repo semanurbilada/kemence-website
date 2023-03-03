@@ -29,7 +29,7 @@
   } 
 
   .contact-items {
-    @apply flex flex-col items-center justify-center gap-4;
+    @apply flex flex-col items-center justify-center md:gap-6 gap-4;
   }
 
   .section-default {

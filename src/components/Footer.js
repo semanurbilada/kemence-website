@@ -17,7 +17,7 @@ export default function Footer() {
                         data-aos="zoom-in"
                         data-aos-duration="800"
                     >
-                        <Icons iconName="phone" />
+                        <Icons iconName="whatsapp" />
                         <a
                             href="https://api.whatsapp.com/send?phone=905313566230" 
                             target='_blank' rel='noopener noreferrer nofollow'>
