@@ -15,7 +15,9 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'home' : "url('/public/background.jpg')",
+        'slide-1' : "url('/public/slide1.jpg')",
+        'slide-2' : "url('/public/slide2.jpg')",
+        'slide-3' : "url('/public/slide3.jpg')",
       },
       container: {
         center: true,
