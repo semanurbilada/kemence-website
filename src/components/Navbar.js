@@ -1,6 +1,53 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-scroll";
 import Icons from "./Icons.js";
+import { Link } from "react-scroll";
+import { useState, useEffect } from "react";
+
+function NavItem({ to, item, offset }) {
+  return(
+    <li>
+      <Link
+        to={to}
+        spy={true}
+        smooth={true}
+        duration={500}
+        offset={offset}
+        className="nav-item"
+        activeClass="nav-active"
+      >
+        {item}
+      </Link>
+    </li>
+  );
+}
+
+function NavItems() {
+  return(
+    <>
+      <NavItem 
+        to="home" 
+        offset={-150}
+        item="Ana Sayfa" 
+      />
+
+      <NavItem 
+        to="services" 
+        offset={-100}
+        item="Hizmetlerimiz" 
+      />
+
+      <NavItem 
+        to="about" 
+        offset={-100}
+        item="Hakkımızda" 
+      />
+
+      <NavItem 
+        to="info" 
+        item="İletişim" 
+      />
+    </>
+  );
+}
 
 export default function Navbar() {
   const [isNavbar, setIsNavbar] = useState(false);
@@ -43,7 +90,8 @@ export default function Navbar() {
       <div className={`${
           navbarBg
         } px-12 mx-auto w-full h-32 fixed flex items-center justify-between bg-primary-default animation z-50`}>
-        <Link to="home"
+        <Link 
+          to="home"
           smooth={true}
           offset={-150}
           duration={500}>
@@ -61,52 +109,7 @@ export default function Navbar() {
 
         <nav>
           <ul className="md:flex hidden gap-x-10">
-            <li>
-              <Link 
-                className="nav-item"
-                activeClass="nav-active"
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={-150}
-                duration={500}>Ana Sayfa
-              </Link>
-            </li>
-
-            <li>
-              <Link 
-                className="nav-item"
-                activeClass="nav-active"
-                to="services"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}>Hizmetlerimiz
-              </Link>
-            </li>
-
-            <li>
-              <Link 
-                className="nav-item"
-                activeClass="nav-active"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}>Hakkımızda
-              </Link>
-            </li>
-
-            <li>
-              <Link 
-                className="nav-item"
-                activeClass="nav-active"
-                to="info"
-                spy={true}
-                smooth={true}
-                duration={500}>İletişim
-              </Link>
-            </li>
+            <NavItems />
           </ul>
         </nav>
       </div>
@@ -123,52 +126,7 @@ export default function Navbar() {
       >
         <nav className="container">
           <ul className="flex flex-col items-center gap-6">
-            <li>
-              <Link 
-                className="nav-item"
-                activeClass="nav-active"
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={-150}
-                duration={500}>Ana Sayfa
-              </Link>
-            </li>
-
-            <li>
-              <Link 
-                className="nav-item"
-                activeClass="nav-active"
-                to="services"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}>Hizmetlerimiz
-              </Link>
-            </li>
-
-            <li>
-              <Link 
-                className="nav-item"
-                activeClass="nav-active"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}>Hakkımızda
-              </Link>
-            </li>
-
-            <li>
-              <Link 
-                className="nav-item"
-                activeClass="nav-active"
-                to="info"
-                spy={true}
-                smooth={true}
-                duration={500}>İletişim
-              </Link>
-            </li>
+            <NavItems />
           </ul>
         </nav>
       </div> 

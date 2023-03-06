@@ -13,6 +13,22 @@ import About from "./views/About";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
+function Main() {
+  return(
+    <>
+      <section id="home">
+        <Home />
+      </section>
+      <section id="services">
+        <Services />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+    </>
+  );
+}
+
 export default function App() {
   return (
     <div className="bg-primary-bg">
@@ -28,21 +44,5 @@ export default function App() {
         <Footer />
       </Router>
     </div>
-  );
-}
-
-function Main() {
-  return(
-    <>
-      <section id="home">
-        <Home />
-      </section>
-      <section id="services">
-        <Services />
-      </section>
-      <section id="about">
-        <About />
-      </section>
-    </>
   );
 }
