@@ -33,6 +33,10 @@
   }
 
   .section-default {
-    @apply h-screen flex items-center justify-center;
+    @apply min-h-screen flex items-center justify-center;
+  }
+
+  .locations {
+    @apply font-bold cursor-pointer hover:text-primary-400 hover:scale-110 animation;
   }
 }
