@@ -37,7 +37,7 @@ function NavItems() {
 
       <NavItem 
         to="about" 
-        offset={-100}
+        offset={-70}
         item="Hakkımızda" 
       />
 

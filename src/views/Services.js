@@ -33,10 +33,10 @@ export default function Services() {
                 </h4>
 
                 <div className="flex md:flex-row flex-col items-center justify-center md:gap-20 gap-10">
-                    <img 
-                        className="rounded-2xl drop-shadow-2xl" 
-                        src="/services.jpg"  alt="services"
-                    />
+                    <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                        <div className="absolute inset-0 bg-gradient-to-t from-slate-800 via-transparent to-transparent"></div>
+                        <img src="/services.jpg" alt="services" />
+                    </div>
                     
                     <div data-aos="fade-up">
                         <h5 className="text-primary-900 md:text-3xl text-xl">

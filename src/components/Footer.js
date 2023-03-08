@@ -34,7 +34,7 @@ export default function Footer() {
                     <div className="contact-items" data-aos="zoom-in">
                         <Icons iconName="mail" />
                         <a
-                            href="mailto:" 
+                            href="mailto:kemencebusiness@gmail.com" 
                             target='_blank' rel='noopener noreferrer nofollow'>
                             Mail için tıklayınız!
                         </a>
