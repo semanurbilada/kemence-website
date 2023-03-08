@@ -15,15 +15,21 @@ export default function HomeSwiper() {
             slidesPerView={1}
             loop={true}
             autoplay={{
-                delay: 4000,
+                delay: 4500,
                 disableOnInteraction: false,
             }}
         >
             <SwiperSlide className="!bg-slide-1 shadow-3xl flex flex-col items-center justify-center gap-20 text-gray-200">
-                <h1 className="text-[60px]">
-                    <span className="md:!text-6xl text-4xl">Kemençe Hurda</span><br/><br/>
-                    Demir, Çelik ve Metal hurda alım satımı!
+                <h1 className="md:!text-5xl text-4xl">
+                    <span className="md:!text-7xl text-4xl">Kemençe Hurda</span><br/><br/>
+                    Demir, Çelik ve Metal Hurda alım satımı!
                 </h1>
+            </SwiperSlide>
+
+            <SwiperSlide className="!bg-slide-2 shadow-3xl">
+                <h2 className="md:!text-[60px]">
+                    Bizden fiyat almadan hurdalarınızı vermeyin !
+                </h2>
                 <Link 
                     to="info"
                     spy={true}
@@ -31,28 +37,15 @@ export default function HomeSwiper() {
                     offset={400}
                     duration={500}>
                     <button 
-                        className="base-button w-36 text-xl">İletişim
+                        className="base-button md:w-36 w-auto text-xl">İletişim
                     </button>
                 </Link>
             </SwiperSlide>
 
-            <SwiperSlide className="!bg-slide-2 shadow-3xl">
-                <h2 className="md:!text-[60px]">Geri dönüşüme katkı sağlıyoruz!</h2>
-                <p className="md:text-xl text-lg">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Perspiciatis, praesentium sequi! Ipsum id natus deleniti earum, quis
-                error? Dolore repellendus cupiditate aliquam debitis maxime nisi quae
-                rerum dolorem consequuntur! Veniam.
-                </p>
-            </SwiperSlide>
-
             <SwiperSlide className="!bg-slide-3 shadow-3xl">
-                <h2 className="md:!text-[60px]">Doğru adrestediniz!</h2>
-                <p className="md:text-2xl text-lg">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Perspiciatis, praesentium sequi! Ipsum id natus deleniti earum, quis
-                error? Dolore repellendus cupiditate aliquam debitis maxime nisi quae
-                rerum dolorem consequuntur! Veniam.
+                <h2 className="md:!text-[60px]">Doğru adrestesiniz !</h2>
+                <p className="md:text-4xl text-2xl">
+                    Hem doğayı koruyun hem de gelir elde edin.
                 </p>
             </SwiperSlide>
         </Swiper>

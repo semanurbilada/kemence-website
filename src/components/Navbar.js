@@ -43,6 +43,7 @@ function NavItems() {
 
       <NavItem 
         to="info" 
+        offset={-0}
         item="İletişim" 
       />
     </>

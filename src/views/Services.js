@@ -25,7 +25,6 @@ export default function Services() {
         duration: 800,
         easing: 'ease-in-out-back'
     });
-
     return(
         <section className="section-default">
             <div className="container flex flex-col items-center md:gap-20 gap-12 text-primary-400">
@@ -35,8 +34,8 @@ export default function Services() {
 
                 <div className="flex md:flex-row flex-col items-center justify-center md:gap-20 gap-10">
                     <img 
-                        className="md:w-fit w-96 h-auto shadow-2xl rounded-2xl" 
-                        src="/services.jpg" alt="services"
+                        className="rounded-2xl drop-shadow-2xl" 
+                        src="/services.jpg"  alt="services"
                     />
                     
                     <div data-aos="fade-up">
@@ -44,10 +43,9 @@ export default function Services() {
                             Her türlü demir, çelik, profil ve sac alım satımı yapılır!
                         </h5><br/>
                         <p className="md:text-xl text-lg">
-                            Firma olarak birçok farklı endüstri koluyla birlikte ya da onlar için taşıma ve nakliyecilik yapıyoruz.<br/>
-                            Bunların yanı sıra demir, çelik alım satımı da gerçekleştiriyoruz.
-                        </p><br/><br/>
-
+                            Firma olarak birçok farklı endüstri koluyla birlikte demir, çelik alım satımı gerçekleştiriyoruz.
+                        </p>
+                        <br/><br/>
                         <div className="flex flex-wrap items-center justify-center md:gap-16 gap-10 md:text-2xl text-xl text-primary-900"
                             data-aos="fade-up" data-aos-duration="1100"
                         >
