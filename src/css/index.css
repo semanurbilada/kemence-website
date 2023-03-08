@@ -13,7 +13,11 @@
   }
 
   .base-button {
-    @apply px-6 py-3 text-center rounded-xl bg-primary-transparent border-2 border-primary-400 text-primary-bg hover:bg-primary-400 animation;
+    @apply px-6 py-3 text-center rounded-xl bg-primary-transparent border-2 border-primary-400 text-secondary-200 hover:scale-105 hover:bg-primary-400 animation;
+  }
+
+  .fixed-button {
+    @apply md:p-4 p-3 bg-primary-default rounded-full hover:bg-primary-900 hover:scale-110 animation;
   }
 
   .nav-item {
@@ -38,5 +42,9 @@
 
   .locations {
     @apply font-bold cursor-pointer hover:text-primary-400 hover:scale-110 animation;
+  }
+
+  .fixed-item {
+    @apply fill-secondary-200 w-10 md:w-auto h-10 md:h-auto;
   }
 }

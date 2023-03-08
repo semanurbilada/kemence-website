@@ -4,14 +4,16 @@ import "../src/css/index.css";
 import { 
   Route, 
   Routes, 
-  BrowserRouter as Router 
+  BrowserRouter as Router
 } from "react-router-dom";
 
 import Home from "./views/Home";
 import Services from "./views/Services";
 import About from "./views/About";
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ContactItems from "./components/ContactItems";
 
 function Main() {
   return(
@@ -31,7 +33,7 @@ function Main() {
 
 export default function App() {
   return (
-    <div className="bg-primary-bg">
+    <div className="bg-secondary-200">
       <Router>
         <Navbar />
         <Routes>
@@ -42,6 +44,7 @@ export default function App() {
           <Route path="/info" element={<Footer />} />
         </Routes>
         <Footer />
+        <ContactItems />
       </Router>
     </div>
   );
