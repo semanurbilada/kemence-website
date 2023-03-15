@@ -29,7 +29,7 @@
   }
 
   .mobile-nav-active {
-    @apply opacity-100 h-48 animation !important;
+    @apply opacity-100 h-48 pointer-events-auto animation !important;
   } 
 
   .contact-items {

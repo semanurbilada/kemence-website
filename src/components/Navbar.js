@@ -121,7 +121,7 @@ export default function Navbar() {
         className={`${
           navbarBg
         } ${
-            isNavbar ? "mobile-nav-active" : "!opacity-0 !h-0 animation"
+            isNavbar ? "mobile-nav-active" : "!opacity-0 !h-0 pointer-events-none animation"
           } 
         w-full h-0 opacity-0 md:hidden fixed top-custom bg-primary-default shadow-xl z-50 text-base`}
       >
