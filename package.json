@@ -1,5 +1,6 @@
 {
   "name": "kemence-website",
+  "homepage": "https://kemencehurda.com.tr",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
