@@ -10,15 +10,18 @@ export default function Footer() {
     });
     return(
         <footer className="section-default relative bg-primary-default z-10" id="info">
-            <div className="container py-20 flex flex-col items-center md:gap-32 gap-10">
+            <div className="container py-20 grid items-center md:gap-32 gap-10">
                 <h3 
-                    className="md:text-4xl text-2xl text-primary-900 underline md:underline-offset-8 md:decoration-4">
+                    className="w-full md:text-4xl text-2xl text-primary-900 underline md:underline-offset-8 md:decoration-4">
                     İLETİŞİM
                 </h3>
 
-                <div className="container flex md:flex-row flex-col items-center justify-between md:gap-0 gap-14 md:text-xl text-base text-primary-900">
+                <div className="container grid grid-cols-1 md:grid-cols-3 items-center md:gap-0 gap-14 md:text-xl text-base text-primary-900">
                     <div className="contact-items" data-aos="zoom-in">
-                        <Icons iconName="whatsapp" />
+                        <Icons 
+                            iconName="whatsapp" 
+                            className="w-10 md:w-auto h-10 md:h-auto"
+                        />
                         <a
                             href="https://api.whatsapp.com/send?phone=905313566230" 
                             target='_blank' rel='noopener noreferrer nofollow'>
@@ -27,12 +30,18 @@ export default function Footer() {
                     </div>
 
                     <div className="contact-items" data-aos="zoom-in">
-                        <Icons iconName="users" />
+                        <Icons 
+                            iconName="users"
+                            className="w-8 md:w-auto h-8 md:h-auto"
+                        />
                         <p>Orhan Yıldırım<br/><br/>Kemal Yıldırım</p>
                     </div>
 
                     <div className="contact-items" data-aos="zoom-in">
-                        <Icons iconName="mail" />
+                        <Icons 
+                            iconName="mail" 
+                            className="w-12 md:w-auto h-12 md:h-auto"
+                        />
                         <a
                             href="mailto:kemencebusiness@gmail.com" 
                             target='_blank' rel='noopener noreferrer nofollow'>

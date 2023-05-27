@@ -37,7 +37,7 @@ export default function HomeSwiper() {
                     offset={400}
                     duration={500}>
                     <button 
-                        className="base-button md:w-36 w-auto text-xl">İletişim
+                        className="base-button md:w-36 w-28 md:text-xl text-lg">İletişim
                     </button>
                 </Link>
             </SwiperSlide>

@@ -39,14 +39,14 @@ export default function Services() {
                     </div>
                     
                     <div data-aos="fade-up">
-                        <h5 className="text-primary-900 md:text-3xl text-xl">
+                        <h5 className="text-primary-900 md:text-3xl text-lg">
                             Her türlü demir, çelik, profil ve sac alım satımı yapılır!
                         </h5><br/>
-                        <p className="md:text-xl text-lg">
+                        <p className="md:text-xl text-base">
                             Firma olarak birçok farklı endüstri koluyla birlikte demir, çelik alım satımı gerçekleştiriyoruz.
                         </p>
                         <br/><br/>
-                        <div className="flex flex-wrap items-center justify-center md:gap-16 gap-10 md:text-2xl text-xl text-primary-900"
+                        <div className="flex flex-wrap items-center justify-center md:gap-16 gap-10 md:text-2xl text-lg text-primary-900"
                             data-aos="fade-up" data-aos-duration="1100"
                         >
                             <LocationItem item="GEBZE" />

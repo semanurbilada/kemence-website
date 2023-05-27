@@ -97,7 +97,7 @@ export default function Navbar() {
           offset={-150}
           duration={500}>
           <img 
-            className="h-auto md:w-48 w-44 hover:scale-105 animation cursor-pointer"
+            className="h-auto md:w-48 w-40 hover:scale-105 animation cursor-pointer"
             src="/logo.png" alt="Navbar Logo" 
           />
         </Link>

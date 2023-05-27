@@ -3,8 +3,8 @@ export default function Icons({ iconName, className, onClick }) {
         <svg  
             onClick={onClick}
             className={className}
-            width="40px"
-            height="40px" 
+            width="38px"
+            height="38px" 
             viewBox="0 0 24 24" 
             fill="none" 
             xmlns="http://www.w3.org/2000/svg" 
@@ -17,6 +17,7 @@ export default function Icons({ iconName, className, onClick }) {
 
     const usersIcon = (
         <svg 
+            className={className}
             width="38px" 
             height="38px" 
             viewBox="0 0 24 24" 
@@ -32,6 +33,7 @@ export default function Icons({ iconName, className, onClick }) {
 
     const mailIcon = (
         <svg 
+            className={className}
             width="50px" 
             height="50px" 
             viewBox="0 0 24 24" 
