@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/kemence-website/static/css/main.2bbafe1e.css",
+    "main.js": "/kemence-website/static/js/main.9016e148.js",
+    "static/media/slide3.jpg": "/kemence-website/static/media/slide3.37919c6b5160dfb568df.jpg",
+    "static/media/slide1.jpg": "/kemence-website/static/media/slide1.f53693390f6004a857bd.jpg",
+    "static/media/slide2.jpg": "/kemence-website/static/media/slide2.b33b33c5a51a847d25ab.jpg",
+    "index.html": "/kemence-website/index.html",
+    "main.2bbafe1e.css.map": "/kemence-website/static/css/main.2bbafe1e.css.map",
+    "main.9016e148.js.map": "/kemence-website/static/js/main.9016e148.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2bbafe1e.css",
+    "static/js/main.9016e148.js"
+  ]
+}
